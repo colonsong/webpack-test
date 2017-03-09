@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && webpack --watch"
+    "build": "rimraf dist && webpack",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,10 @@
     "url": "https://github.com/colonsong/webpack-test/issues"
   },
   "homepage": "https://github.com/colonsong/webpack-test#readme",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "rimraf": "^2.6.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }

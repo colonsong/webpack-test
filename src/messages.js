@@ -1,4 +1,4 @@
 module.exports = {
-    hi: 'rebuild @@ in watch',
+    hi: 'webpack is runnings watch',
     event: 'hello event'
 };
