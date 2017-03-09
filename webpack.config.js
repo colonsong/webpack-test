@@ -36,7 +36,12 @@ module.exports = {
             test: /\.(png|jpg|gif)$/,
             loaders: ['url-loader?limit=10000&name=images/[hash:12].[ext]'],
             exclude: '/node_modules/',
-        }]
+        }],
+        loaders: [{
+            test: /\.css$/,
+            loaders: ['style-loader', 'css-loader?localIdentName=[path][name]---[local]'],
+            exclude: '/node_modules/',
+        }],
     },
     output: {
         path: path.join(__dirname, 'dist'),

@@ -1,6 +1,9 @@
+var style = require('./style/globalStyle.css');
+
 import {multiply} from './mathStuff';
 
 const newMessage =  () => `
+    <div class="${style.box}">
     DEV: ${DEVELOPMENT.toString()} <br>
     PROD: ${PRODUCTION.toString()} <br>
 `;
