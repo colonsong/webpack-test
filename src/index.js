@@ -1,6 +1,9 @@
 import {multiply} from './mathStuff';
 
-const newMessage =  () => (multiply(3,3));
+const newMessage =  () => `
+    DEV: ${DEVELOPMENT.toString()} <br>
+    PROD: ${PRODUCTION.toString()} <br>
+`;
 
 var app = document.getElementById('app');
 app.innerHTML = newMessage();
