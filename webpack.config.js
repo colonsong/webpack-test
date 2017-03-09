@@ -15,7 +15,7 @@ var entry = PRODUCTION
 
 var plugins = PRODUCTION 
     ? [
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('style-[contenthash:10].css')
     ]
     : [new webpack.HotModuleReplacementPlugin()]
 
