@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var HTMLWebpackPlugin = require('html-webpack-plugin');
 
 var DEVELOPMENT = process.env.NODE_ENV === 'development';
 var PRODUCTION = process.env.NODE_ENV === 'production';
@@ -15,7 +16,10 @@ var entry = PRODUCTION
 
 var plugins = PRODUCTION 
     ? [
-        new ExtractTextPlugin('style-[contenthash:10].css')
+        new ExtractTextPlugin('style-[contenthash:10].css'),
+        new HTMLWebpackPlugin({
+            template: 'index-template.html'
+        })
     ]
     : [new webpack.HotModuleReplacementPlugin()]
 
@@ -56,7 +60,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/dist/',
-        filename: 'bundle.js'
+        publicPath: PRODUCTION ? '/' : '/dist/',
+        filename: PRODUCTION ? 'bundle.[hash:12].min.js' : 'bundle.js'
     }
 }
