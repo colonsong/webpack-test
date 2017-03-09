@@ -1,5 +1,7 @@
 var style = require('./style/globalStyle.css');
 
+import $ from 'jquery';
+
 var app = document.getElementById('app');
 app.innerHTML = `
     <div id="menu">
@@ -26,6 +28,7 @@ document.getElementById('loadPage2').addEventListener('click', ()=> {
         });
 })
 
+$('#app').css('background-color', 'yellow');
 
 if(DEVELOPMENT) {
     if(module.hot) {

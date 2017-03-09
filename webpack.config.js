@@ -38,6 +38,9 @@ const cssLoader = PRODUCTION
     :['style-loader', 'css-loader?localIdentName=' + cssIdentifier];
 
 module.exports = {
+    externals: {
+        'jquery':'jQuery'
+    },
     devtool: 'source-map',
     entry: entry,
     plugins: plugins,
