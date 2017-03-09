@@ -3,8 +3,10 @@
  */
 var messages = require('./messages');
 
+var newMessage = () => (`<p>${messages.hi} ${messages.event}</p>`);
+
 var app = document.getElementById('app');
-app.innerHTML = '<p> ' + messages.hi + ' ' + messages.event + '</p>';
+app.innerHTML = newMessage();
 
 if(module.hot) {
     module.hot.accept();
