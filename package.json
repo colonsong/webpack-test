@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/colonsong/webpack-test#readme",
   "dependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
     "url-loader": "^0.5.8"
   },
