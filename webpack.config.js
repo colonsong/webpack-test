@@ -25,6 +25,11 @@ module.exports = {
             test: /\.js$/,
             loaders: ['babel-loader'],
             exclude: '/node_modules/',
+        }],
+        loaders: [{
+            test: /\.(png|jpg|gif)$/,
+            loaders: ['file-loader'],
+            exclude: '/node_modules/',
         }]
     },
     output: {

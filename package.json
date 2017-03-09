@@ -18,7 +18,9 @@
     "url": "https://github.com/colonsong/webpack-test/issues"
   },
   "homepage": "https://github.com/colonsong/webpack-test#readme",
-  "dependencies": {},
+  "dependencies": {
+    "file-loader": "^0.10.1"
+  },
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.4.0",
