@@ -1,4 +1,4 @@
 module.exports = {
-    hi: 'with hot module',
+    hi: 'run production or development',
     event: 'hello event'
 };
