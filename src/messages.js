@@ -1,4 +1,4 @@
 module.exports = {
-    hi: 'webpack is runnings watch',
+    hi: 'with hot module',
     event: 'hello event'
 };
