@@ -1,4 +1,4 @@
 module.exports = {
-    hi: 'hi colon',
+    hi: 'rebuild @@ in watch',
     event: 'hello event'
 };
