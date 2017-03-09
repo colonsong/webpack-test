@@ -8,7 +8,8 @@ const newMessage =  () => `
 var app = document.getElementById('app');
 app.innerHTML = newMessage();
 
-
-if(module.hot) {
-    module.hot.accept();
+if(DEVELOPMENT) {
+    if(module.hot) {
+        module.hot.accept();
+    }
 }
